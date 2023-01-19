@@ -1,0 +1,7 @@
+.container-socials{
+  display: flex;
+  justify-content: center;
+  position:absolute;
+  bottom:7%;
+  left:45%;
+}
