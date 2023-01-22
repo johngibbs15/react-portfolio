@@ -1,10 +1,8 @@
-import ania from '../../assets/ania-kubow.jpeg';
-import cf from '../../assets/careerfoundry.jpeg';
 import wesbos from '../../assets/wesbos.jpeg';
 import { Container, Col, Row, Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './projects.css';
-const Projects = () => {
+import './wesbos.css';
+const WesBos = () => {
     return (
         <Container
             className="border d-flex align-items-center justify-content-center"
@@ -29,7 +27,7 @@ const Projects = () => {
                     >
                         <Card.Img
                             variant="top"
-                            src={ania}
+                            src={wesbos}
                             alt="ania-kubow"
                             style={{
                                 width: '18rem',
@@ -46,14 +44,12 @@ const Projects = () => {
                                 Projects insprired by Ania Kubow's YouTube
                                 channel. Links are included with each project.
                             </Card.Text>
-                            <Link to="/projects/ania-kubow-projects">
-                                <Button
-                                    className="align-self-end"
-                                    variant="primary bottom"
-                                >
-                                    Go somewhere
-                                </Button>
-                            </Link>
+                            <Button
+                                className="align-self-end"
+                                variant="primary bottom"
+                            >
+                                Go somewhere
+                            </Button>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -70,7 +66,7 @@ const Projects = () => {
                     >
                         <Card.Img
                             variant="top"
-                            src={cf}
+                            src={wesbos}
                             style={{
                                 width: '18rem',
                                 height: '10rem',
@@ -86,14 +82,12 @@ const Projects = () => {
                             <Card.Text style={{ color: 'black' }}>
                                 Projects from the Career Foundry curriculum.
                             </Card.Text>
-                            <Link to="/projects/career-foundry-projects">
-                                <Button
-                                    className="align-self-end"
-                                    variant="primary bottom"
-                                >
-                                    Go somewhere
-                                </Button>
-                            </Link>
+                            <Button
+                                className="align-self-end"
+                                variant="primary bottom"
+                            >
+                                Go somewhere
+                            </Button>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -102,7 +96,7 @@ const Projects = () => {
                         className="shadow"
                         style={{
                             width: '18rem',
-                            ackground: 'white',
+                            background: 'white',
                             borderRadius: '5px',
                             height: '23rem',
                             overflow: 'hidden',
@@ -122,12 +116,12 @@ const Projects = () => {
                             className="d-flex row"
                             style={{ margin: '5px', overflow: 'hidden' }}
                         >
-                            <Card.Title>Wes Bos</Card.Title>
+                            <Card.Title>Card Title</Card.Title>
                             <Card.Text style={{ color: 'black' }}>
                                 Projects from Wesbos's Javascript 30 course.
                                 Links are included for each project.
                             </Card.Text>
-                            <Link to="/projects/wes-bos-projects">
+                            <Link to={''}>
                                 <Button
                                     className="align-self-end"
                                     variant="primary"
@@ -143,4 +137,4 @@ const Projects = () => {
     );
 };
 
-export default Projects;
+export default WesBos;
